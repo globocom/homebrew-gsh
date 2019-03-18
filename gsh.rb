@@ -11,6 +11,5 @@ class Gsh < Formula
   
     def install
       bin.install "gsh-cli-darwin-amd64"
-      system "cp bin/gsh-cli-darwin-amd64 bin/gsh"
     end
   end
