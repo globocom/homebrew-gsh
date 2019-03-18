@@ -1,4 +1,4 @@
-class GSH < Formula
+class Gsh < Formula
     desc "A command line tool to use GSH"
     homepage "https://github.com/globocom/gsh"
     url "https://github.com/globocom/gsh/releases/download/v0.1/gsh-cli-darwin-amd64"
