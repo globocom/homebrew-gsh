@@ -10,6 +10,6 @@ class Gsh < Formula
     bottle :unneeded
   
     def install
-      bin.install "gsh-cli-darwin-amd64"
+      bin.install "gsh"
     end
   end
