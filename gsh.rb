@@ -10,7 +10,7 @@ class Gsh < Formula
     bottle :unneeded
   
     def install
-      prefix.install "gsh-cli-darwin-amd64", "gsh"
-      bin.install "gsh"
+      bin.install "gsh-cli-darwin-amd64"
+      system "cp bin/gsh-cli-darwin-amd64 bin/gsh"
     end
   end
