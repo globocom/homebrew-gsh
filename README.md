@@ -1,6 +1,6 @@
 # homebrew-gsh
 
-This repository lists homebrew taps for gsh client package.
+This repository lists homebrew taps for [gsh](https://github.com/globocom/gsh) client package.
 
 ## Usage
 
