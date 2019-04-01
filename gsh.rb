@@ -4,7 +4,7 @@ class Gsh < Formula
   homepage "https://github.com/globocom/gsh"
   url "https://github.com/globocom/gsh/releases/download/v0.1.2/gsh-darwin-amd64.tar.gz"
   version "0.1.2"
-  sha256 "6e736cd43492ecf0010b4c9df3c793e147dbf5bca8c7bea5eee6c92acb4fcbea"
+  sha256 "f94e1d3d1a05e83a659ac2954011db223f33389b3afa4f7c8ec9cce8c220aa1b"
   
   depends_on "openssh"
 
