@@ -2,9 +2,9 @@
 class Gsh < Formula
   desc "A command line tool to use GSH"
   homepage "https://github.com/globocom/gsh"
-  url "https://github.com/globocom/gsh/releases/download/v0.1.1/gsh_0.1.1_Darwin_x86_64.tar.gz"
-  version "0.1.1"
-  sha256 "2b28869f4f089e8cffb345dd22eff63caafd07c24a144c6608bc0f305147814e"
+  url "https://github.com/globocom/gsh/releases/download/v0.1.2/gsh-darwin-amd64.tar.gz"
+  version "0.1.2"
+  sha256 "6e736cd43492ecf0010b4c9df3c793e147dbf5bca8c7bea5eee6c92acb4fcbea"
   
   depends_on "openssh"
 
