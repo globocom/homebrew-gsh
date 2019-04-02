@@ -17,12 +17,7 @@ class Gsh < Formula
     cd "src/github.com/globocom/gsh" do
       system "dep", "ensure"
       system "go", "build", "-o", "gsh", "./cli/main.go"
-      # prefix.install_metafiles
       bin.install "gsh"
     end
-    system "mkdir", ENV["HOME"] + "/.gsh/bin/"
-    system "mv", "gsh", ENV["HOME"] + "/.gsh/bin/"
-    opoo "Change your PATH to contains $HOME/.gsh/bin/ at .profile file!"
-    ENV["PATH"] = ENV["PATH"] + ":" +  ENV["HOME"] + "/.gsh/bin/"
   end
 end
