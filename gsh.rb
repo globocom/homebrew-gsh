@@ -2,7 +2,7 @@
 class Gsh < Formula
   desc "A command line tool to use GSH"
   homepage "https://github.com/globocom/gsh"
-  url "https://github.com/globocom/gsh.git"
+  url "https://github.com/globocom/gsh.git",
       :tag      => "v0.1.2",
       :revision => "8b0545ec92113afdb8ad130aba913269acec9aab"
   
