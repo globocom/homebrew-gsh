@@ -12,6 +12,7 @@ class Gsh < Formula
 
   def install
     ENV["GOPATH"] = buildpath
+    ENV["CGO_ENABLED"] = "1"
     (buildpath/"src/github.com/globocom/gsh").install buildpath.children
     cd "src/github.com/globocom/gsh" do
       system "dep", "ensure"
