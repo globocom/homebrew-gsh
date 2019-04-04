@@ -10,20 +10,4 @@ class Gsh < Formula
   def install
     bin.install "gsh"
   end
-
-  devel do
-    depends_on "go"
-    depends_on "dep"
-    url "https://github.com/globocom/gsh.git",
-      :tag      => "v0.1.3",
-      :revision => "f63c8b7f5200364e21d67769c9cc5f2d4b95e748"
-    ENV["GOPATH"] = buildpath
-    ENV["CGO_ENABLED"] = "1"
-    (buildpath/"src/github.com/globocom/gsh").install buildpath.children
-    cd "src/github.com/globocom/gsh" do
-      system "dep", "ensure"
-      system "go", "build", "-o", "gsh", "./cli/main.go"
-      bin.install "gsh"
-    end
-  end
 end
