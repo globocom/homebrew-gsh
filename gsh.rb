@@ -2,15 +2,21 @@
 class Gsh < Formula
   desc "A command line tool to use GSH"
   homepage "https://github.com/globocom/gsh"
-  url "https://github.com/globocom/gsh.git",
-      :tag      => "v0.1.2",
-      :revision => "8b0545ec92113afdb8ad130aba913269acec9aab"
-  
+  url "https://github.com/globocom/gsh/releases/download/v0.1.3/gsh-darwin-amd64.tar.gz"
+  version "0.1.3"
   depends_on "openssh"
-  depends_on "go"
-  depends_on "dep"
 
   def install
+    bin.install "gsh"
+  end
+
+  devel do
+    depends_on "go"
+    depends_on "dep"
+    url "https://github.com/globocom/gsh.git",
+      :tag      => "v0.1.3",
+      :revision => "f63c8b7f5200364e21d67769c9cc5f2d4b95e748"
+
     ENV["GOPATH"] = buildpath
     ENV["CGO_ENABLED"] = "1"
     (buildpath/"src/github.com/globocom/gsh").install buildpath.children
