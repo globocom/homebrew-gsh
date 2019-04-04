@@ -17,7 +17,6 @@ class Gsh < Formula
     url "https://github.com/globocom/gsh.git",
       :tag      => "v0.1.3",
       :revision => "f63c8b7f5200364e21d67769c9cc5f2d4b95e748"
-
     ENV["GOPATH"] = buildpath
     ENV["CGO_ENABLED"] = "1"
     (buildpath/"src/github.com/globocom/gsh").install buildpath.children
